@@ -1,0 +1,161 @@
+@media (max-width: 1200px)
+	.menu
+		&_item
+			padding-right: 20px
+		&_link
+			font-size: 13px
+	.promo
+		&_header
+			font-size: 50px
+	.mobile
+		&_item
+			width: 302px
+			margin-bottom: 16px
+	.footer
+		&_icons
+			padding-right: 20px
+		&_round
+			height: 40px
+			width: 40px
+		&_links
+			&_frow
+				padding: 0 60px
+			&_srow
+				padding: 0 20px
+@media 	(max-width: 991px)
+	.menu
+		&_item
+			padding-right: 9px
+		&_link
+			font-size: 10px
+	.subheader
+		&_logo
+			img
+				width: 100%
+		&_text
+			font-size: 11px
+		&_phone
+			font-size: 18px
+		&_btn
+			margin-top: 23px
+			width: 130px
+			height: 36px
+	.benefits
+		&_item
+			flex-direction: column
+			align-items: center
+		&_text
+			padding-right: 0		
+			span
+				display: block
+				text-align: center
+	.mobile
+		&_item
+			width: 228px
+			height: 239px
+			margin-bottom: 11px
+			&_plus
+				bottom: 19px
+	.footer
+		&_icons
+			padding-right: 20px
+			padding-left: 10px
+		&_round
+			height: 40px
+			width: 40px
+		&_links
+			&_frow
+				padding: 0 60px
+			&_srow
+				padding: 0 20px
+		&_stores
+			padding-left: 0
+			
+@media (max-width: 767px)
+	nav
+		position: fixed
+	.menu
+		position: fixed
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		top: 0
+		left: -100% 
+		width: 50%
+		height: 100vh
+		padding: 20px 15px
+		background-color: rgba(0, 0, 0, 0.8)
+		transition: 0.6s all
+		
+		z-index: 5
+		&_active
+			left: 0
+		&_item
+			padding-right: 0
+			border: none
+			margin: 10px
+		&_link
+			font-size: 17px
+			text-decoration: none
+	.hamburger
+		display: block
+		position: absolute
+		right: 10px
+		top: 50%
+		transform: translateY(-50%)
+		width: 20px
+		height: 12px
+		span
+			display: block
+			width: 100%
+			height: 2px
+			background-color: white
+			margin-bottom: 2px
+			transition: 0.5s all
+		&_active
+			span
+				margin-bottom: -2px
+				&:nth-child(1)
+					transform: translateY(3px) rotate(-45deg)
+				&:nth-child(2)
+					display: none
+				&:nth-child(3)
+					transform: translateY(3px) rotate(45deg)
+	.xs-hidden
+		display: none
+	.xs-visible
+		display: block					
+	.subheader
+		align-items: center
+		&_text
+			display: none
+		&_btn
+			display: block
+			width: 200px
+			height: 40px
+			margin: 0 auto
+			margin-top: 9px
+		&_phone
+			display: block
+			text-align: center
+			margin-top: 10px	 
+	.mobile
+		&_item
+			z-index: -1
+	.footer
+		&_icons
+			display: none
+			padding-right: 0px
+			padding-left: 0px
+		&_round
+			height: 45px
+			width: 45px
+		&_links
+			width: 100%
+			&_frow
+				padding: 0 30px
+			&_srow
+				padding: 0 20px
+		&_stores
+			padding-left: 0
+			display: none
